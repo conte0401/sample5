@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="header__nav nav" id="js-nav">
+        <ul class="nav__items nav-items">
+            <li class="nav-items__item"><a href="#">トップページ</a></li>
+            <li class="nav-items__item"><a href="#company">会社概要</a></li>
+            <li class="nav-items__item"><a href="#services">事業内容</a></li>
+            <li class="nav-items__item"><a href="#works">事例紹介</a></li>
+            <li class="nav-items__item"><a href="#access">アクセス</a></li>
+            <li class="nav-items__item"><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    <button class="header__hamburger hamburger" id="js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+    </button>
+    <header id="header">
+        <nav class="header-menu">
+            <ul>
+                <li><a href="#">トップページ</a></li>
+                <li><a href="#company">会社概要</a></li>
+                <li><a href="#services">事業内容</a></li>
+                <li><a href="#works">事例紹介</a></li>
+                <li><a href="#access">アクセス</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="img">
+            <img src="img/1382320-scaled.jpg" alt="1">
+            <img src="img/23558644-scaled.jpg" alt="2">
+        </div>
+        <section id="company">
+            <div class="title">
+                <h2>COMPANY</h2>
+                <h3>会社概要</h3>
+            </div>
+            <div class="flex">
+                <div class="text">
+                    <p class="text-title">経営理念</p>
+                    <p>顧客目線で技術の提供を行うことにより、誠実な仕事の実現と、社会貢献を目指す。</p>
+                    <p class="text-title">経営方針</p>
+                    <p>
+                        【商品】時代の変化に合わせた必要な商品・サービスを提供し続ける<br>
+                        【顧客】お客様とずっとつながれる関係づくりを目指す<br>
+                        【社員】DXにより変革する自社や社会に対応できる人材を育成する<br>
+                        【会社】常にイノベーションを起こし、進化を続ける<br>
+                        【社会】地域や業界において、なくてはならない存在となる
+                    </p>
+                </div>
+                <div class="company-img">
+                    <img src="img/23558644-scaled.jpg" alt="1">
+                    <img src="img/pic_service01.jpg" alt="2">
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="title">
+                <h2>SERVICES</h2>
+                <h3>事業内容</h3>
+            </div>
+            <div class="flex">
+                <div class="services-img">
+                    <img src="img/23558644-scaled.jpg" alt="1">
+                    <img src="img/pic_service01.jpg" alt="2">
+                </div>
+                <div class="text">
+                    <p>
+                        空調・衛生設備の設計・施工及び監理<br>
+                        コンピューターによる図面・書類作成及びデーター編集<br>
+                        建築・インテリアに関するコンサルティング<br>
+                        空調・衛生機器の販売及びメンテナンス<br>
+                        省エネルギーシステムの研究開発<br>
+                        不動産の売買・賃貸・管理及び仲介<br>
+                        前各号に附帯する一切の業務
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="works">
+            <div class="title">
+                <h2>WORKS</h2>
+                <h3>事例紹介</h3>
+            </div>
+            <ul class="slider" id="js-slider">
+                <li>
+                    <img src="img/冷却塔改修後-768x576.jpg" alt="1">
+                    <p>冷却塔改修後</p>
+                </li>
+                <li>
+                    <img src="img/冷却塔改修前-768x576.jpg" alt="2">
+                    <p>冷却塔改修前</p>
+                </li>
+                <li>
+                    <img src="img/ボイラー改修後-768x576.jpg" alt="3">
+                    <p>蒸気ボイラー改修後</p>
+                </li>
+                <li>
+                    <img src="img/ボイラー改修前-768x576.jpg" alt="4">
+                    <p>蒸気ボイラー改修前</p>
+                </li>
+                <li>
+                    <img src="img/冷凍チラー-768x576.jpg" alt="5">
+                    <p>水冷チラーに更新</p>
+                </li>
+                <li>
+                    <img src="img/冷凍機-768x637.jpg" alt="6">
+                    <p>ターボ冷凍機撤去前</p>
+                </li>
+            </ul>
+            <div class="dots"></div>
+        </section>
+        <section id="access">
+            <div class="title">
+                <h2>ACCESS</h2>
+                <h3>アクセス</h3>
+            </div>
+            <div class="flex">
+                <div class="text">
+                    <img src="img/building-solid.svg" alt="building-solid">
+                    <p>
+                        会社名<br>
+                        プランナーズ・ワン
+                    </p>
+                    <img src="img/location-pin-solid.svg" alt="location-pin-solid">
+                    <p>
+                        〒069-0802<br>
+                        北海道江別市野幌寿町３１−６
+                    </p>
+                    <img src="img/phone-solid.svg" alt="phone-solid">
+                    <p>
+                        電話番号<br>
+                        011-123-4567
+                    </p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.1590780786805!2d141.5178559148597!3d43.10117169596951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2df6f5d0a9f5%3A0x13a053a4cb408d6c!2z44CSMDY5LTA4MDIg5YyX5rW36YGT5rGf5Yil5biC6YeO5bmM5a-_55S677yT77yR4oiS77yW!5e0!3m2!1sja!2sjp!4v1662355614315!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="title">
+                <h2>CONTACT</h2>
+                <h3>お問い合わせ</h3>
+            </div>
+            <form action="#" method="post">
+            <dl>
+                <dt><label for="name">氏名</label></dt>
+                <dd><input type="text" id="name" name="yourname"></dd>
+                <dt><label for="email">メールアドレス</label></dt>
+                <dd><input type="email" id="email" name="youremail"></dd>
+                <dt><label for="daimei">題名</label></dt>
+                <dd><input type="text" id="daimei" name="yourdaimei"></dd>
+                <dt><label for="message">メッセージ本文（任意）</label></dt>
+                <dd><textarea name="message" id="yourmessage" ></textarea></dd>
+            </dl>
+            <div class="button"><input type="submit" value="送信"></div>
+        </form>
+        </section>
+    </main>
+</body>
+</html>

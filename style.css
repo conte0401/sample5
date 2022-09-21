@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+input, textarea {
+    border: solid 1px !important;
+}
+
+.title{
+    position: relative;
+}
+
+.title h2{
+    color: rgba(0,163,146,.5);
+    font-size: 60px;
+    padding: 100px 0 100px 10%;
+    font-family: serif;
+}
+
+.title h3{
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    left: 7%;
+}
+
+#header{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+#header .header-menu ul{
+    display: flex;
+    justify-content: center;
+}
+
+#header .header-menu li{
+    margin: 20px;
+}
+
+/* ヘッダーのナビ部分 */
+  
+.header__nav{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(-100%);
+    background-color: rgba(0,163,146,.8);
+    z-index: 9999;
+    transition: all 0.6s
+}
+  
+.nav-items{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+  
+  /* ナビのリンク */
+
+.nav-items__item a{
+    color: #fff;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+  
+.nav-items__item:last-child a{
+    margin-bottom: 0;
+} 
+ 
+  /* ハンバーガーメニュー */
+  
+.header__hamburger{
+    width: 48px;
+    margin: 20px;
+}
+  
+.hamburger{
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 9999;
+    position: fixed;/*固定する*/
+    top: 0;
+    right: 0;
+    display: none;
+}
+  
+  /* ハンバーガーメニューの線 */
+.hamburger span{
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0,163,146);
+    position: relative;
+    transition: ease .4s;
+    display: block;
+}
+  
+.hamburger span:nth-child(1){
+    top: 0;
+}
+  
+.hamburger span:nth-child(2){
+    margin: 8px 0;
+}
+  
+.hamburger span:nth-child(3){
+    top: 0;
+}
+  
+  /* ハンバーガーメニュークリック後のスタイル */
+
+.header__nav.active{
+    transform: translateX(0);
+    position: fixed;
+}
+  
+.hamburger.active span:nth-child(1){
+    top: 5px;
+    transform: rotate(45deg);
+}
+  
+.hamburger.active span:nth-child(2){
+    opacity: 0;
+}
+  
+.hamburger.active span:nth-child(3){
+    top: -13px;
+    transform: rotate(-45deg);
+}
+
+.img{
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+}
+
+.img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    animation: ChangeImage 10s infinite;
+    opacity: 0;
+    object-fit: cover;
+}
+
+@keyframes ChangeImage{
+    0% { opacity: 0 }
+    50% { opacity: 1 }
+    100% { opacity: 0 }
+}
+
+.img img:nth-of-type(1) {
+     animation-delay: 0s;
+}
+.img img:nth-of-type(2) {
+   animation-delay: 5s;
+}
+
+#company .flex{
+    display: flex;
+}
+
+#company .text{
+    width: 50%;
+}
+
+#company .text-title{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#company .text p{
+    margin: 0 5% 50px 5%;
+}
+
+#company .company-img{
+    width: 50%;
+    display: flex;
+}
+
+#company img{
+    width: 40%;
+    height: 500px;
+    margin: 5%;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 75%);
+}
+
+#services .flex{
+    display: flex;
+}
+
+#services .text{
+    width: 50%;
+}
+
+#services .text p{
+    margin: 0 5% 50px 5%;
+}
+
+#services .services-img{
+    width: 50%;
+    display: flex;
+}
+
+#services img{
+    width: 40%;
+    height: 500px;
+    margin: 5%;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 75%);
+}
+
+.slider .slick-slide{
+    width: 600px;
+    height: 400px;
+    margin: 0 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .slick-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .slick-arrow{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 0;
+    position: absolute;
+    top: 180px;
+    z-index: 1;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+}
+
+.slider .slick-arrow::before{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #09000d;
+    border-width: 3px 3px 0 0;
+    position: absolute;
+    top: 24px;
+    transform: rotate(45deg);
+}
+
+.slider .slick-next{
+    right: 0;
+}
+
+.slider .slick-prev{
+    left: 0;
+}
+
+.slider .slick-next::before{
+    left: 20px;
+}
+
+.slider .slick-prev::before{
+    border-width: 0 0 3px 3px;
+    right: 22px;
+}
+
+.dots .slick-dots{
+    text-align: center;
+}
+
+.dots .slick-dots li{
+    display: inline-block;
+}
+
+.dots .slick-dots button{
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+    font-size: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background: #bcbcbc;
+    border-radius: 50%;
+}
+
+.dots .slick-dots .slick-active button {
+    background: #0a467d;
+}
+
+.slick-dots {
+    position: static !important;
+}
+
+#access .flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+#access .text{
+    text-align: center;
+    width: 45%;
+    height: 450px;
+}
+
+#access .text img{
+    width: 32px;
+}
+
+#access .text p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#access .map{
+    width: 45%;
+}
+
+iframe{
+    width: 100%;
+    height: 450px;
+}
+
+#contact dl{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#contact dt{
+    font-size: 30px;
+    color: #555;
+    margin: 10px 0;
+}
+
+#contact dd input{
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+#contact dd textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+#contact .button {
+    text-align: center;
+}
+
+#contact .button input {
+    width: 200px;
+    background-color: rgba(0,163,146);
+    color: white;
+    padding: 15px 0;
+    border: solid 1px rgba(0,163,146);
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width:800px){
+    
+    .title h3{
+        font-size: 40px;
+        top: 50%;
+        left: 6%;
+    }
+
+    #header{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    #company .flex{
+        flex-direction: column-reverse;
+    }
+
+    #company .text{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #company .company-img{
+        width: 100%;
+    }
+
+    #services .flex{
+        flex-direction: column;
+    }
+
+    #services .text{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #services .services-img{
+        width: 100%;
+    }
+
+    #access .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #access .text{
+        width: 80%;
+    }
+    
+    #access .map{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:400px){
+
+    .title h2{
+        font-size: 40px;
+    }
+    
+    .title h3{
+        font-size: 30px;
+    }
+
+    #company .text-title{
+        font-size: 20px;
+    }
+
+    #contact dt{
+        font-size: 20px;
+    }
+
+}
